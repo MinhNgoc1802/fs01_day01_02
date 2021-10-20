@@ -10,13 +10,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const FirstPage(),
-      // home: const SecondPage(),
+      // home: FirstPage(
+      //   numberColumn: 4,
+      // ),
+      // home: SecondPage(
+      //   numberRow: 6,
+      // ),
+      home: FourthPage(),
     );
   }
 }
