@@ -11,6 +11,7 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const double _fixedDividerWidth = 5;
+
     if (numberColumns > 0) {
       return Scaffold(
         body: Row(
@@ -25,6 +26,7 @@ class FirstPage extends StatelessWidget {
         backgroundColor: Colors.lightBlueAccent,
       );
     }
+
     return const EmptyWidget(
       content: 'Không có cột nào được hiển thị.',
     );

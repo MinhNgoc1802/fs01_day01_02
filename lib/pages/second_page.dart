@@ -14,6 +14,7 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const double _fixedDividerHeight = 5;
+
     if (numberRows > 0) {
       return Scaffold(
         body: Column(
@@ -28,6 +29,7 @@ class SecondPage extends StatelessWidget {
         backgroundColor: backgroundColor,
       );
     }
+
     return const EmptyWidget(
       content: 'Không có hàng nào được hiển thị.',
     );

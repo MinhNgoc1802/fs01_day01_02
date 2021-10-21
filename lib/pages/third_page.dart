@@ -15,22 +15,27 @@ class ThirdPage extends StatelessWidget {
     if (numberColumns > 0) {
       return Scaffold(
         body: Container(
+          child: Stack(
+            children: [
+              columnWidget(),
+              rowWidget(),
+            ],
+          ),
           color: Colors.lightBlueAccent,
           margin: EdgeInsets.only(
             top: paddingSys.top,
             bottom: _spacingItem,
-          ),
-          child: Stack(
-            children: [
-              FirstPage(numberColumns: numberColumns),
-              SecondPage(
-                numberRows: numberColumns * 2,
-              ),
-            ],
           ),
         ),
       );
     }
     return const EmptyWidget(content: 'Không có hàng/ cột nào được hiển thị.');
   }
+
+  Widget columnWidget() => FirstPage(
+        numberColumns: numberColumns,
+      );
+  Widget rowWidget() => SecondPage(
+        numberRows: numberColumns * 2,
+      );
 }

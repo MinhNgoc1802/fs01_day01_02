@@ -11,12 +11,10 @@ class EmptyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Colors.white,
-        child: Center(
-          child: Text(
-            content,
-          ),
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Text(
+          content,
         ),
       ),
     );
