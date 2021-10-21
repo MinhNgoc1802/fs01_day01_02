@@ -2,28 +2,30 @@ import 'package:flutter/material.dart';
 import '../widgets/widget.dart';
 
 class SecondPage extends StatelessWidget {
-  const SecondPage({
-    Key? key,
-    required this.numberRow,
-  }) : super(key: key);
+  const SecondPage(
+      {Key? key,
+      required this.numberRows,
+      this.backgroundColor = Colors.transparent})
+      : super(key: key);
 
-  final int numberRow;
+  final int numberRows;
+  final Color? backgroundColor;
 
   @override
   Widget build(BuildContext context) {
-    const double _fixedDividerHeight = 10;
-    if (numberRow > 0) {
+    const double _fixedDividerHeight = 5;
+    if (numberRows > 0) {
       return Scaffold(
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: List.generate(
-            (numberRow - 1),
+            (numberRows - 1),
             (index) => const ItemWidget(
               height: _fixedDividerHeight,
             ),
           ),
         ),
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: backgroundColor,
       );
     }
     return const EmptyWidget(

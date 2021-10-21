@@ -14,7 +14,7 @@ class FourthPage extends StatelessWidget {
             child: Container(
               color: Colors.lightBlueAccent,
               margin: const EdgeInsets.only(
-                bottom: 10,
+                bottom: 5,
               ),
             ),
           ),
@@ -28,7 +28,7 @@ class FourthPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 10,
+                  width: 5,
                 ),
                 Expanded(
                   child: Container(

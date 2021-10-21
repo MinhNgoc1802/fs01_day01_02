@@ -12,13 +12,29 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: FirstPage(
-      //   numberColumn: 4,
-      // ),
+      /**
+       * Hình đầu tiên bên trái
+       */
+      home: FirstPage(
+        numberColumns: 4,
+      ),
+      /**
+       * Hình thứ 2 từ trái sang
+       */
       // home: SecondPage(
-      //   numberRow: 6,
+      //   numberRows: 6,
+      //   backgroundColor: Colors.lightBlueAccent,
       // ),
-      home: FourthPage(),
+      /**
+       * Hình thứ 3 từ trái sang
+       */
+      // home: ThirdPage(
+      //   numberColumns: 4,
+      // ),
+      /**
+       * Hình đầu tiên bên phải
+       */
+      // home: FourthPage(),
     );
   }
 }
