@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       /**
        * Hình đầu tiên bên trái
        */
-      // home: FirstPage(
-      //   numberColumns: 4,
-      // ),
+      home: FirstPage(
+        numberColumns: 4,
+      ),
 
       /**
        * Hình thứ 2 từ trái sang
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
       /**
        * Hình đầu tiên bên phải
        */
-      home: FourthPage(),
+      // home: FourthPage(),
     );
   }
 }

@@ -21,7 +21,7 @@ class SecondPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: List.generate(
             (numberRows - 1),
-            (index) => const ItemWidget(
+            (index) => const DividerItem(
               height: _fixedDividerHeight,
             ),
           ),

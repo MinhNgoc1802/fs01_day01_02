@@ -18,7 +18,7 @@ class FirstPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: List.generate(
             (numberColumns - 1),
-            (index) => const ItemWidget(
+            (index) => const DividerItem(
               width: _fixedDividerWidth,
             ),
           ),

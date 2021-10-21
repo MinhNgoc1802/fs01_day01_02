@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ItemWidget extends StatelessWidget {
-  const ItemWidget({
+class DividerItem extends StatelessWidget {
+  const DividerItem({
     Key? key,
     this.width = double.infinity,
     this.height = double.infinity,
